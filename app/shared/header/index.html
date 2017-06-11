@@ -1,0 +1,30 @@
+<div class="md-toolbar-tools">
+  <md-button class="md-icon-button" aria-label="Menu"
+  	ng-click="header.toggleSidenav('left')">
+    <i class="material-icons">menu</i>
+  </md-button>
+
+  <md-button class="md-icon-button logo" aria-label="logo">
+    <img ng-src="assets/images/logo.png" alt="logo" class="logo-image">
+  </md-button>
+  <h2 flex md-truncate>Bread by Patty's Corp.</h2>
+  <md-button class="md-icon-button" aria-label="Options" ng-click="header.message()">
+      <i class="material-icons">notifications_none</i>
+  </md-button>
+  <md-menu md-position-mode="target-right target">
+    <md-button class="md-icon-button" aria-label="Options" ng-click="header.openMenu($mdMenu, $event)">
+      <i class="material-icons">settings</i>
+    </md-button>
+    <md-menu-content>
+      <md-menu-item>
+        <span>
+          Firstname Lastname
+        </span>
+      </md-menu-item>
+      <md-divider></md-divider>
+      <md-menu-item>
+        <md-button ng-click="header.logout()">Logout</md-button>
+      </md-menu-item>
+    </md-menu-content>
+  </md-menu>
+</div>
