@@ -2,9 +2,9 @@ define([], function() {
     "use strict";
 
     require(['app'], function(app){
-        var config = ['$http', '$rootScope', '$localStorage', userService];
+        var config = ['$http', '$rootScope', '$localStorage', '$state', userService];
 
-        function userService($http, $rootScope, $localStorage) {
+        function userService($http, $rootScope, $localStorage, $state) {
             var user = {};
 
             var service = {
@@ -31,8 +31,10 @@ define([], function() {
             }
 
             function authenticated (){
-
-                return $localStorage.access_token !== null && $localStorage.access_token !== undefined;
+                // DEMO PURPOSES ONLY:  
+                return !$state.includes('login');
+                // COMMENT THIS OUT WHEN AUTH IS CONFIGURED
+                //return $localStorage.access_token !== null && $localStorage.access_token !== undefined;
             }
             
             return service;

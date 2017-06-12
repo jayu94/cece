@@ -1,13 +1,13 @@
-<md-toolbar class="">
-        <span flex></span>
-        <div layout="row" class="md-toolbar-tools-bottom inset">
-          <i class="material-icons md-48">person</i>
-          <div layout="column" flex>
-            <div class="md-subhead">Firstname Lastname</div>
-            <div class="md-caption">email@domainname.com</div>
-          </div>
-        </div>
-      </md-toolbar>
+<md-toolbar class="" md-colors="{ background: 'grey-50'}">
+<span flex></span>
+<div layout="row" class="md-toolbar-tools-bottom inset">
+  <i class="material-icons md-48">person</i>
+  <div layout="column" flex>
+    <div class="md-subhead">Firstname Lastname</div>
+    <div class="md-caption">email@domainname.com</div>
+  </div>
+</div>
+</md-toolbar>
 
 <md-list flex layout="column">
   <div layout="row" layout-sm="column" layout-align="space-around" ng-if="sidebar.menu.length == 0">
@@ -26,7 +26,7 @@
       <md-divider></md-divider>
       <md-list>
         <md-list-item ng-repeat="subItem in item.items" ng-click="null" ui-sref="{{ subItem.link }}"
-          md-colors="{ background: (state.includes(subItem.link) ? 'grey-700' : 'grey-800')}">
+          md-colors="{ background: (state.includes(subItem.link) ? 'grey-100' : 'grey-50')}">
           <md-item-content md-ink-ripple layout="row" flex>
             <span class="md-caption">{{subItem.name}}</span>
           </md-item-content>
@@ -35,7 +35,7 @@
     </div>
 
     <md-list-item ui-sref="{{ item.link }}" ng-if="item.type != 'toggle'"
-        md-colors="{ background: (state.includes(item.link) ? 'grey-700' : 'grey-800')}" layout="row">
+        md-colors="{ background: (state.includes(item.link) ? 'grey-100' : 'grey-50')}" layout="row">
         <i class="material-icons">{{ item.icon }}</i>
         <md-item-content md-ink-ripple layout="row" flex>
           {{item.name}}

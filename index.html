@@ -17,13 +17,13 @@
 			flex layout="column"
 			ng-show="auth.authenticated()"
 			md-component-id="left" 
-			md-colors="{ background: 'grey-800'}"
+			md-colors="{ background: 'grey-50'}"
 			ng-controller="sidebarController as sidebar" 
 			ng-include="'app/shared/sidebar/index.html'"
 			class="md-whiteframe-z1 sidebar">
 		</md-sidenav>
 		<div layout="column" flex layout-fill>
-			<md-toolbar class="md-whiteframe-z1"
+			<md-toolbar class="md-whiteframe-z1" md-colors="{ background: 'grey-50'}"
 				ng-show="auth.authenticated()" layout="row"
 			  	ng-include="'app/shared/header/index.html'"
 			  	ng-controller="headerController as header">
