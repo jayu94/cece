@@ -14,13 +14,14 @@
 	</head>
 	<body layout="row" layout-fill ng-cloak>
 		<md-sidenav
-			flex layout="column"
+			layout="column"
 			ng-show="auth.authenticated()"
 			md-component-id="left" 
+			md-is-locked-open="$mdMedia('gt-sm')"
 			md-colors="{ background: 'grey-50'}"
 			ng-controller="sidebarController as sidebar" 
 			ng-include="'app/shared/sidebar/index.html'"
-			class="md-whiteframe-z1 sidebar">
+			class="sidebar">
 		</md-sidenav>
 		<div layout="column" flex layout-fill>
 			<md-toolbar class="md-whiteframe-z1" md-colors="{ background: 'grey-50'}"

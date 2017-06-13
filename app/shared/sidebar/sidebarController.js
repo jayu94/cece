@@ -30,6 +30,28 @@ define([], function(){
 					role: "admin",
 					link: "home"
 				},
+				{
+					name: "Stuff",
+					icon: "assignment",
+					type: "toggle",
+					items: [
+						{
+							name: "Item1",
+							link: "",
+						}
+					]
+				},
+				{
+					name: "Stuff 2",
+					icon: "assignment",
+					type: "toggle",
+					items: [
+						{
+							name: "Item1",
+							link: "",
+						}
+					]
+				},
 			]
 		}
 

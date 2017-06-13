@@ -17,6 +17,7 @@ define([
 	'app/shared/sidebar/sidebarController',
 	'app/shared/services/messageService',
 	'app/shared/services/userService',
+	
 	'app/login/app'
 ], function(angular, angularRoute, aria, animate, material, messages, datatable, loadingBar, storage, config, route, headerCtrl, sidebarCtrl, messageService, userService, login) {
 	

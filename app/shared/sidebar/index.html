@@ -1,11 +1,7 @@
-<md-toolbar class="" md-colors="{ background: 'grey-50'}">
-<span flex></span>
-<div layout="row" class="md-toolbar-tools-bottom inset">
-  <i class="material-icons md-48">person</i>
-  <div layout="column" flex>
-    <div class="md-subhead">Firstname Lastname</div>
-    <div class="md-caption">email@domainname.com</div>
-  </div>
+<md-toolbar class="" md-colors="{ background: 'grey-50'}" md-whiteframe="1">
+
+<div class="md-toolbar-tools">
+    <h2 flex md-truncate>CECE PROJECT</h2>
 </div>
 </md-toolbar>
 
@@ -32,6 +28,7 @@
           </md-item-content>
         </md-list-item>
       </md-list>
+      <md-divider></md-divider>
     </div>
 
     <md-list-item ui-sref="{{ item.link }}" ng-if="item.type != 'toggle'"
